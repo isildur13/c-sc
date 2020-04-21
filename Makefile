@@ -1,11 +1,5 @@
-all: 1.c 2.c
+contact: contact.c
+	gcc contact.c -o contact -lmysqlclient -I/usr/include/mysql/
 
-1.c:
-	gcc 1.helloworld.c -o 1
-
-2.c:
-	gcc 2.basic-chars.c -o 2
-
-clean:
-	rm 1 2
-
+connection: connection.c
+	gcc connection.c -o conn -lmysqlclient -I/usr/include/mysql
