@@ -3,3 +3,7 @@ contact: contact.c
 
 connection: connection.c
 	gcc connection.c -o conn -lmysqlclient -I/usr/include/mysql
+
+mysql: mysql.c
+
+	gcc mysql.c -o mysql -lmysqlclient -I/usr/include/mysql
